@@ -39,6 +39,7 @@ Node *insertBeginDLL(Node *head, int x)
 
 int main()
 {
+    // Node *head = NULL;
     Node *head = new Node(10);
     Node *temp = new Node(20);
     Node *temp2 = new Node(30);
