@@ -25,7 +25,7 @@ void printlist(Node *head)
     cout << endl;
 }
 
-Node *insertBegin(Node *head, int x)
+Node *insertEnd(Node *head, int x)
 {
     Node *temp = new Node(x);
     Node *curr = head;
@@ -46,7 +46,7 @@ int main()
 
     printlist(head);
     int x = 2;
-    head = insertBegin(head, x);
+    head = insertEnd(head, x);
     printlist(head);
     cout << head->next->next->next->next->next->data;
     return 0;
