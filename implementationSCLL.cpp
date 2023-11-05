@@ -14,7 +14,7 @@ struct Node
 
 void printSCLL(Node *head){
     Node *temp = head;
-    // if(head == NULL) cout << NULL;
+    if(head == NULL) return;
     while(head->next != temp){
         cout << head->data << " ";
         head = head->next; 
