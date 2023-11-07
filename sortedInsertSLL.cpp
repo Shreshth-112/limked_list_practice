@@ -26,6 +26,7 @@ Node *sortedInsert(Node *head, int d)
 {
     Node *curr = head;
     Node *temp = new Node(d);
+    if(head == NULL) return temp;
     while (curr->data < temp->data && curr->next != NULL)
     {
         curr = curr->next;
